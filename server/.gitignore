@@ -1,7 +1,7 @@
 #  Environment variables (NEVER commit these) 
 .env
 
-# ── Node modules 
+#  Node modules 
 server/node_modules/
 node_modules/
 
