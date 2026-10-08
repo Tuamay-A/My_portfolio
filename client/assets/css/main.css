@@ -89,7 +89,7 @@ h6 {
 
 /* PHP Email Form Messages
 ------------------------------*/
-.php-email-form .error-message {
+.contact-form-check .error-message {
   display: none;
   background: #df1529;
   color: #ffffff;
@@ -99,7 +99,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .sent-message {
+.contact-form-check .sent-message {
   display: none;
   color: #ffffff;
   background: #059652;
@@ -109,7 +109,7 @@ h6 {
   font-weight: 600;
 }
 
-.php-email-form .loading {
+.contact-form-check .loading {
   display: none;
   background: var(--surface-color);
   text-align: center;
@@ -117,7 +117,7 @@ h6 {
   margin-bottom: 24px;
 }
 
-.php-email-form .loading:before {
+.contact-form-check .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -126,10 +126,10 @@ h6 {
   margin: 0 10px -6px 0;
   border: 3px solid var(--accent-color);
   border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
+  animation: contact-form-check-loading 1s linear infinite;
 }
 
-@keyframes php-email-form-loading {
+@keyframes contact-form-check-loading {
   0% {
     transform: rotate(0deg);
   }

@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 //  Middleware 
 app.use(cors({
-  origin: 'https://myportfolio-client-pi.vercel.app',
+  origin: 'https://tuamay-assefa.vercel.app/',
   methods: ['GET', 'POST'],
 }));
 app.use(express.json());
