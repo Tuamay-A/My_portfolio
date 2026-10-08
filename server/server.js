@@ -8,14 +8,17 @@ const app  = express();
 const PORT = process.env.PORT || 3000;
 
 //  Middleware 
-app.use(cors());
+app.use(cors({
+  origin: 'https://myportfolio-client-pi.vercel.app',
+  methods: ['GET', 'POST'],
+}));
 app.use(express.json());
 
 //  Routes 
 
 // Health check
 app.get('/', (req, res) => {
-  res.json({ message: 'SnapFolio server is running' });
+  res.json({ message: 'My Portfolio server is running' });
 });
 
 // POST /api/contact   save form submission to PostgreSQL
